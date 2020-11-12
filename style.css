@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(92, 89, 89);
+}
+
+#main{
+    width:800px;
+    height: 800px;
+}
+
+.Calculator{
+    width: 100px;
+    height: 30px;
+    margin:auto;
+    margin-top:200px;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    position:relative;
+}
+
+.Calculator > div{
+
+    width:60px;
+    height: 40px; 
+    font-size: 50px;  
+}
+
+.screen{
+    grid-column: 1/ 5;
+    margin-bottom:23px;
+}
+
+#text{
+    height: 45px;
+    width: 210px;
+    font-size: 28px;  
+    background-color: rgba(49, 42, 42, 0.164); 
+    color:rgb(199, 194, 194);
+  
+}
+
+#button{
+    width:50px;
+    height: 60px;
+    font-size: 18px;  
+    background-color: rgba(41, 40, 40, 0.336);
+    color:rgb(241, 235, 235);
+}
+
+.sum{
+    grid-column: 1/ 5; 
+    background-color: rgba(41, 40, 40, 0.336);
+    color:white;
+    height: 60px;  
+}
+
+#button.plus, #button.minus, #button.multiplay, #button.divide, #button.Percentage {
+    background-color:rgba(10, 10, 10, 0.678);
+}
+
+#button:hover{
+    background-color: rgba(32, 32, 32, 0.404);
+    cursor:pointer;
+}
+.sum:hover{
+    background-color: rgba(32, 32, 32, 0.404);
+    cursor:pointer;
+}
+
+#button.plus:hover, #button.minus:hover, #button.multiplay:hover, #button.divide:hover, #button.Percentage :hover{
+    background-color:rgba(8, 8, 8, 0.87);
+    cursor:pointer;
+}
+
+.menu{
+    display:grid;
+    background-color: rgb(185, 49, 49);
+}
+
+.Calculator > div.menu{
+    width: 18px;
+    height: 299px;
+    margin:64px 0 0 200px;
+    position:absolute;
+}
+
+#buttonM{
+    display:none;  
+}
+
+.Calculator > div.menu:hover{
+    display:block;
+    background-color:  rgb(185, 49, 49);
+    width: 69px;
+    height: 299px;
+    margin-left:150px;
+    z-index: 1
+    transition-property: width;
+    transition-duration: 0.08s;
+}
+
+.Calculator > div.menu:hover > #buttonM{
+    width:45px;
+    height: 35px;
+    font-size: 16px; 
+    margin-left:13px;
+    display: grid;
+    grid-gap: 20px;
+    background-color: rgb(175, 39, 39);
+    margin-top:16px;
+    transition-duration: 1.9s;
+    transition-property: width;
+    cursor:pointer;
+    padding:5px;   
+}
+
+.Calculator > div.menu > #buttonM:hover{
+    background-color: rgb(155, 29, 29);
+}
+
+
